@@ -19,17 +19,9 @@ function cogerNumero(numerico) {
 function cogerOperacion(operacion) {
     if (operaciones == "") {
         numeroUno = document.getElementById("resultado").value;
-        document.getElementById("resultado").value='0';
-        switch (operacion) {
+        document.getElementById("resultado").value = '0';
+        operaciones = operacion;
 
-            case "+":
-                operaciones = "+";
-                break;
-            case "-":
-                operaciones = "-";
-                break;
-
-        }
     } else {
         alert("ya as elegido una operacion");
     }
@@ -46,10 +38,21 @@ function igualacion() {
         case "-":
             resul = parseFloat(numeroUno) - parseFloat(numeroDos);
             break;
-
+        case "x":
+            resul = parseFloat(numeroUno) * parseFloat(numeroDos);
+            break;
+         case "%":
+            resul = parseFloat(numeroUno) / parseFloat(numeroDos);
+            break;
     }
     numeroUno = 0;
     numeroDos = 0;
     operaciones = "";
     document.getElementById("resultado").value = resul;
+}
+function reset(){
+    numeroUno = 0;
+    numeroDos = 0;
+    operaciones = "";
+    document.getElementById("resultado").value = '0';
 }
