@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-nov-2016, 0:41:25
+    Author     : rafa
+*/
+
+#calula{
+    background: gray;
+    position: absolute;
+    /*nos posicionamos en el centro del navegador*/
+    top:30%;
+    left:50%;
+    /*determinamos una anchura*/
+    width:330px;
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    margin-left:-200px;
+    /*determinamos una altura*/
+    height:320px;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    margin-top:-150px;
+    border:1px solid #808080;
+    padding:5px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+}
