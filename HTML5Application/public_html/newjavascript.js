@@ -41,7 +41,7 @@ function igualacion() {
         case "x":
             resul = parseFloat(numeroUno) * parseFloat(numeroDos);
             break;
-         case "%":
+        case "%":
             resul = parseFloat(numeroUno) / parseFloat(numeroDos);
             break;
     }
@@ -50,9 +50,23 @@ function igualacion() {
     operaciones = "";
     document.getElementById("resultado").value = resul;
 }
-function reset(){
+function reset() {
     numeroUno = 0;
     numeroDos = 0;
     operaciones = "";
     document.getElementById("resultado").value = '0';
+}
+function esEntero() {
+    numero = parseFloat(document.getElementById("resultado").value);
+    if (numero % 1 == 0) {
+        // alert ("Es un numero entero");
+       longitud =document.getElementById("resultado").value.length;
+        if (document.getElementById("resultado").value[longitud-1]!=".") {
+            cadena = document.getElementById("resultado").value + '.';
+            document.getElementById("resultado").value = cadena;
+        }
+    } else {
+        alert("Es un numero decimal");
+
+    }
 }
